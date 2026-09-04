@@ -2,8 +2,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Vamshi-Vaddepalli/Customer_Trend_Analysis-Python-SQL-Power-BI-.git
-   cd Customer_Trend_Analysis-Python-SQL-Power-BI-
+   git clone https://github.com/Vamshi-Vaddepalli/Customer_Trend_Analysis.git
+   cd Customer_Trend_Analysis
    ```
 2. **Open Customer_Shopping_Behavior_Analysis.ipynb notebook**
 
