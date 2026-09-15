@@ -10,23 +10,39 @@
       margin: 0;
       padding: 0;
     }
-    html, body {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
+    body {
       background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 100vw;
+      overflow: hidden;
     }
-    iframe {
+    /* Enforces responsive 16:9 scaling */
+    .dashboard-container {
+      position: relative;
+      width: 100%;
+      max-width: 100vw;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 ratio (9 / 16 = 0.5625) */
+    }
+    .dashboard-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       border: none;
-      display: block;
     }
   </style>
 </head>
 <body>
 
-  <iframe title="Customer_behavior_dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNmYwYzU5OTktOGZhOS00ZTk0LWI5YWEtMTZiNWIyZjExYjk5IiwidCI6IjZmMTdmMmVlLTA0YzYtNDNkZS1hMWVhLTRhODgwZDg4ZTI2ZCJ9" frameborder="0" allowFullScreen="true"></iframe>
+  <div class="dashboard-container">
+    <!-- Paste your <iframe> here, keeping src and allowFullScreen, but remove hardcoded width="..." and height="..." attributes -->
+    <iframe title="Customer_behavior_dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNmYwYzU5OTktOGZhOS00ZTk0LWI5YWEtMTZiNWIyZjExYjk5IiwidCI6IjZmMTdmMmVlLTA0YzYtNDNkZS1hMWVhLTRhODgwZDg4ZTI2ZCJ9" frameborder="0" allowFullScreen="true"></iframe>
+  </div>
 
 </body>
 </html>
